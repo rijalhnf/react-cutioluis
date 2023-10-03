@@ -1,26 +1,16 @@
 export const BIO = [
   {
-    year: 2020,
+    year: "2017 - 2021",
     title: {
       name: "Ministry of Finance",
-      cargo: "Videographer and Photographer",
+      cargo: "Content Creator",
     },
     description:
       "Development of ads, covers, and social media using design methodologies such as Design Thinking",
     details: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
   },
   {
-    year: 2021,
-    title: {
-      name: "Ministry of Finance",
-      cargo: "Graphic Designer",
-    },
-    description:
-      "Development of ads, covers, and social media using design methodologies such as Design Thinking",
-    details: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
-  },
-  {
-    year: 2022,
+    year: "2021 - 2023",
     title: {
       name: "Ministry of Finance",
       cargo: "Full time student",
@@ -32,10 +22,10 @@ export const BIO = [
     ],
   },
   {
-    year: 2023,
+    year: "2023 - Now",
     title: {
       name: "Ministry of Finance",
-      cargo: "Full time student",
+      cargo: "Staff",
     },
     description:
       "Freelance projects with Technologies like Nextjs, Reactjs, Redux and Gatsby",

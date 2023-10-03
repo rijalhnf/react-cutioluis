@@ -1,5 +1,5 @@
 .container-about {
-  margin: 5rem auto;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -19,9 +19,9 @@
 }
 
 .about-right img {
-  border-radius: 100%;
+  padding-top: 30px;
   width: 100%;
-  max-width: 180px;
+  max-width: 300px;
   margin: 0 2.5rem;
   height: auto;
 }
@@ -54,4 +54,12 @@
 
   }
 
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-li {
+  text-align: center;
 }

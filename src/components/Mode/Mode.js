@@ -10,10 +10,10 @@ export default function Mode({ handleModeChange, setMode }) {
             <a href="#about">Me</a>
           </li>
           <li>
-            <a href="#projects" >Works</a>
+            <a href="#work" >Works</a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/cutioluis">
+            <a target="_blank" href="https://github.com/rijalhnf/react-cutioluis" rel="noreferrer">
               <span class="link-decoration">Source</span>
               <span class="icon-change">
                 <img

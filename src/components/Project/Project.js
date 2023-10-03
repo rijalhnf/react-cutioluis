@@ -1,8 +1,8 @@
 import React from "react";
 import "./Project.css";
-import Line from "../../images/line-purple.svg";
-import ImageTemp from "../../images/prev-project-temp.png";
-import FigmaIcon from "../../images/figma-icon.svg";
+// import Line from "../../images/line-purple.svg";
+// import ImageTemp from "../../images/prev-project-temp.png";
+// import FigmaIcon from "../../images/figma-icon.svg";
 
 function Project() {
   return (
@@ -13,7 +13,7 @@ function Project() {
       </p>
       <div className="project-header">
         <div className="project-box">
-          <span className="white-text">my own-personal-webpage</span>
+          <span className="white-text center-text">my own-personal-webpage</span>
           <p className="gray-text text-box">
             Created using React JS, deploy via github with Vercel. Oftenly migrating from Adobe Illustrator to web-based design application.
           </p>
@@ -22,7 +22,7 @@ function Project() {
       </div>
       <div className="project-header">
         <div className="project-box">
-          <span className="white-text">my own-wedding-video</span>
+          <span className="white-text center-text">my own-wedding-video</span>
           <p className="gray-text text-box">
             Edited in Final Cut Pro, and a bit effects in Adobe Premiere Pro.
           </p>

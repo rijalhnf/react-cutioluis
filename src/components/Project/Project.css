@@ -1,12 +1,15 @@
 .container-project {
-  margin-top: 8rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .project-header {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 .project-box {
   border-radius: 10px;
@@ -97,4 +100,8 @@
   100% {
     background-position: right;
   }
+}
+
+.center-text {
+  text-align: center;
 }

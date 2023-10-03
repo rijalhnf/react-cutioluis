@@ -1,13 +1,13 @@
-import ReactTooltip from "react-tooltip";
-import { BioDetails } from "../BioDetails/BioDetails";
+// import ReactTooltip from "react-tooltip";
+// import { BioDetails } from "../BioDetails/BioDetails";
 import { BIO } from "../../constants/bio";
 import "./Bio.css";
 
 export const Bio = () => {
   return (
-    <section className="container container-lines">
+    <section id="work" className="container container-lines">
       <p className="purple-text">
-        📚 Study <span className="purple-smoke-text">History</span>{" "}
+        🚀 Work <span className="purple-smoke-text">History</span>{" "}
       </p>
       <div className="line"></div>
       {BIO.map((e) => (
@@ -16,15 +16,15 @@ export const Bio = () => {
           <span className="gray-text" data-tip="soo cuteeeee">
             {e.title.cargo} at {e.title.name}
           </span>
-          <ReactTooltip
+          {/* <ReactTooltip
             getContent={(dataTip) => `This little buddy is ${dataTip}`}
             place="top"
             effects="float"
             className="custom-theme"
           >
-            {/*             <BioDetails />
-             */}{" "}
-          </ReactTooltip>
+                         <BioDetails />
+             {" "}
+          </ReactTooltip>*/}
           <div className="line"></div>
         </div>
       ))}
