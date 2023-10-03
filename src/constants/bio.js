@@ -1,5 +1,15 @@
 export const BIO = [
   {
+    year: 2020,
+    title: {
+      name: "Ministry of Finance",
+      cargo: "Videographer and Photographer",
+    },
+    description:
+      "Development of ads, covers, and social media using design methodologies such as Design Thinking",
+    details: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
+  },
+  {
     year: 2021,
     title: {
       name: "Ministry of Finance",
