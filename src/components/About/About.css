@@ -31,7 +31,6 @@
   margin-left: 1.1rem;
 }
 
-
 .about-see {
   border-bottom: 1px solid var(--purple-color);
   padding-bottom: 2px;
@@ -40,8 +39,6 @@
 
 @media (max-width: 425px) {
   .about-left {
-    padding: 20px;
-    text-align: left;
     max-width: 100%;
   }
 
@@ -51,7 +48,5 @@
 
   .about-right img {
     margin: 0 1rem;
-
   }
-
 }
