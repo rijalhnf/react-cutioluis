@@ -18,9 +18,9 @@ function Project() {
             Created using React JS, deploy via github with Vercel. Oftenly migrating from Adobe Illustrator to web-based design application.
           </p>
         </div>
-        <img className="project-line" src={Line} alt="abajo" />
+        {/* <img className="project-line" src={Line} alt="abajo" />*/}
       </div>
-      <div className="project-details">
+      {/* <div className="project-details">
         <img src={ImageTemp} alt="Project React Simple Portfolio" />
         <div className="details-left">
           <p className="gray-text">
@@ -39,8 +39,8 @@ function Project() {
           <p className="gray-text">
             Building on <span className="white-text">Github</span> and old portfolio <span className="white-text">Instagram</span>{" "}
           </p>
-        </div>
-      </div>
+  </div>
+      </div>*/}
     </section>
   );
 }
