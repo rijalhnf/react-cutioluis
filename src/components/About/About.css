@@ -1,5 +1,6 @@
 .container-about {
   margin: 5rem auto;
+  padding: auto, 5px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
