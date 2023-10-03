@@ -2,6 +2,7 @@
   margin: 30px auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   justify-content: center;
   color: var(--white-smoke-color);
@@ -16,6 +17,10 @@
 
 .left-skills {
   margin: 1rem 0;
+}
+
+.about-right {
+  text-align: center;
 }
 
 .about-right img {
