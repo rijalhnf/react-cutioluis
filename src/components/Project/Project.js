@@ -13,9 +13,18 @@ function Project() {
       </p>
       <div className="project-header">
         <div className="project-box">
-          <span className="white-text">personal-page-portfolio</span>
+          <span className="white-text">my own-personal-webpage</span>
           <p className="gray-text text-box">
             Created using React JS, deploy via github with Vercel. Oftenly migrating from Adobe Illustrator to web-based design application.
+          </p>
+        </div>
+        {/* <img className="project-line" src={Line} alt="abajo" />*/}
+      </div>
+      <div className="project-header">
+        <div className="project-box">
+          <span className="white-text">my own-wedding-video</span>
+          <p className="gray-text text-box">
+            Edited in Final Cut Pro, and a bit effects in Adobe Premiere Pro.
           </p>
         </div>
         {/* <img className="project-line" src={Line} alt="abajo" />*/}
