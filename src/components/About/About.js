@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section id="about" className="container container-about">
       <div className="about-left">
-        <span className="purple-text">
+        <span className="purple-text center">
           ✋Rijal Hanif{" "}
           <span className="purple-smoke-text">- Introduction</span>{" "}
         </span>

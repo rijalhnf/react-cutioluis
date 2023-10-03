@@ -39,6 +39,8 @@
 
 @media (max-width: 425px) {
   .about-left {
+    padding: 20px;
+    text-align: left;
     max-width: 100%;
   }
 
@@ -49,4 +51,8 @@
   .about-right img {
     margin: 0 1rem;
   }
+}
+
+.center {
+  text-align: center;
 }
