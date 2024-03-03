@@ -1,0 +1,12 @@
+.custom-box {
+    /* border-radius: 10px; */
+  /* padding: 1.5rem 3rem; */
+  max-width: 600px;
+  min-width: none;
+  margin-top: 20px;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border-width: 0cap;
+  margin-left: auto;
+  margin-right: auto;
+}

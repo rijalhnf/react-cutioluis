@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="container-footer">
       <p>
         Meet me <a className="white-text" href="https://www.github.com/rijalhnf">Github</a> or{" "}
-        <a className="white-text" href="https://www.instagra.com/rijalhnf">Instgrm</a>
+        <a className="white-text" href="https://www.linkedin.com/in/rijalhnf/">Linkedin</a>
       </p>
     </footer>
   );

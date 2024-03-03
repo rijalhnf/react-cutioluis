@@ -64,6 +64,11 @@ body {
   color: var(--black-color);
 }
 
+.white-mode .custom-box {
+  background-color: var(--white-color-smoke-bg);
+  color: var(--black-color);
+}
+
 .white-mode .container-icon {
   background-color: var(--white-color-smoke-bg);
 }
