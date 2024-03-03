@@ -7,14 +7,6 @@ import resepsi from '../../images/calendar/resepsi.jpg'
 
 const data = {
     "events": [
-        // {
-        //     "name": "Pertemuan Pertama",
-        //     "date": "20 Januari 2023",
-        // },
-        // {
-        //     "name": "Pertemuan Keluarga",
-        //     "date": "1 Februari 2023",
-        // },
         {
             "name": "Lamaran",
             "date": "12 Maret 2023",
@@ -42,7 +34,7 @@ const data = {
 
 function Calendar() {
     return (
-        <div style={{ marginTop: "0px", paddingBottom: "10px", marginLeft: "40px", marginRight: "40px", justifyContent: "center" }}>
+        <div style={{ marginTop: "0px", paddingBottom: "10px", marginLeft: "30px", marginRight: "30px", justifyContent: "center" }}>
             <h1 className="header-title" style={{ textAlign: "center" }}> Dila & Hanif calendar.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
@@ -64,11 +56,11 @@ function Calendar() {
                         <img
                             alt="gambar"
                             src={event.image}
-                            style={{ display: 'block', width: 200 }} />
+                            style={{ display: 'block', width: 200, borderRadius: "10px 0px 0px" }} />
                         <Flex
                             align="center"
                             justify='flex-start'
-                            style={{ padding: 32 }}>
+                            style={{ padding: 25 }}>
 
                             <p>
                                 <span style={{ fontSize: "22px", fontWeight: "bold" }}>{event.name}</span>
