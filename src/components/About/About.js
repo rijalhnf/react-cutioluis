@@ -26,7 +26,7 @@ export const About = () => {
         {/* <a className="about-see" href="#">More{"->"} </a>*/}
       </div>
       <div className="about-right">
-        <img src={iconImage} alt="" />
+        <img src={iconImage} alt="" style={{borderRadius: "10px"}}/>
       </div>
     </section>
   );
