@@ -79,7 +79,7 @@ export default function Mode({ handleModeChange, setMode, fill }) {
                 <a href="/#work" >Works</a>
               </li></> :
             <><li>
-              <a href="/" onClick={handleNav("/")}>Home</a>
+              <a href="/" onClick={handleNav("/")}>Home ⚛</a>
             </li></>}
 
           <li>
@@ -104,7 +104,7 @@ export default function Mode({ handleModeChange, setMode, fill }) {
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a onClick={(e) => e.preventDefault()}>
                 <Space>
-                  Project
+                  Project ⬇
                 </Space>
               </a>
             </Dropdown>
