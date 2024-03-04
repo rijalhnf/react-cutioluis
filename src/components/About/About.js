@@ -25,8 +25,8 @@ export const About = () => {
         </ul>*/}
         {/* <a className="about-see" href="#">More{"->"} </a>*/}
       </div>
-      <div className="about-right">
-        <img src={iconImage} alt="" style={{borderRadius: "10px"}}/>
+      <div className="about-right" style={{ paddingTop: "20px" }}>
+        <img src={iconImage} alt="" style={{ paddingTop: "0px", borderRadius: "15px" }} />
       </div>
     </section>
   );
