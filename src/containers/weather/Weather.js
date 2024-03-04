@@ -44,7 +44,7 @@ function Weather() {
     }, []);
 
     if (isLoading) {
-        return <p>Loading...</p>;
+        console.log("Loading...")
     }
 
     if (error) {
