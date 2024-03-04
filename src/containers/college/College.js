@@ -1,6 +1,6 @@
 function College() {
     return (
-        <div>
+        <div style={{ height: "100vh", marginBottom: "40px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Serba-Serbi Kuliah.</h1>
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
                 <div className="project-box">

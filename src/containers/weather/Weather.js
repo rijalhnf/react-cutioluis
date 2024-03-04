@@ -45,7 +45,7 @@ function Weather() {
     }, []);
 
     if (isLoading) {
-        return  <div style={{ height: "100vh" }}>
+        return <div style={{ height: "100vh" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
@@ -58,10 +58,10 @@ function Weather() {
                     </p>
                 </div>
             </div>
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-60px', height: "100vh" }}>
-            <Spin size="large" />
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-60px', height: "100vh" }}>
+                <Spin size="large" />
+            </div>
         </div>
-    </div>
     }
 
     if (error) {
@@ -69,7 +69,7 @@ function Weather() {
     }
 
     if (!data) {
-        return  <div style={{ height: "100vh" }}>
+        return <div style={{ height: "100vh" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
@@ -197,13 +197,12 @@ function Weather() {
 
 
     return (
-        <div style={{ height: "100vh" }}>
+        <div style={{ height: "100vh", marginLeft: "20px", marginRight: "20px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
 
                 <div className="project-box">
-                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
                     <span className="white-text center-text">⛈️  How's the rain possibility?</span>
                     <p className="gray-text text-box">
                         The weather forecast predicts sunny skies and mild temperatures for the upcoming day.

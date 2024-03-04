@@ -3,7 +3,7 @@ import "./Mode.css";
 import { RiSunFill, RiMoonFill } from "react-icons/ri";
 import { Dropdown, Space } from 'antd';
 
-export default function Mode({ handleModeChange, setMode, fill }) {
+function DropdownItem({ link, name }) {
   const navigate = useNavigate();
   function handleNav(path) {
     return function (event) {
@@ -11,62 +11,63 @@ export default function Mode({ handleModeChange, setMode, fill }) {
       navigate(path);
     };
   }
-  const items = [
+  return (
+    <a href="_blank" onClick={handleNav(link)}>
+      {name}
+    </a>
+  );
+}
+
+
+export default function Mode({ handleModeChange, setMode, fill }) {
+
+  const projects = [
     {
       label: (
-        <a href="_blank" onClick={handleNav("/calendar")}>
-          Calendar
-        </a>
-
+        <DropdownItem link="/calendar" name="Calendar" />
       ),
       key: '0',
     },
     {
       label: (
-        <a href="_blank" onClick={handleNav("/weather")}>
-          Weather
-        </a>
+        <DropdownItem link="/weather" name="Weather" />
 
       ),
       key: '1',
     },
     {
       label: (
-        <a href="_blank" onClick={handleNav("/meals")}>
-          Meals
-        </a>
+        <DropdownItem link="/meals" name="Meals" />
 
       ),
       key: '2',
     },
+  ];
+
+  const portfolio = [
     {
       label: (
-        <a href="_blank" onClick={handleNav("/college")}>
-          College
-        </a>
+        <DropdownItem link="/contentcreator" name="Content Creator" />
 
       ),
-      key: '3',
+      key: '0',
     },
     {
       label: (
-        <a href="_blank" onClick={handleNav("/contentcreator")}>
-          Content Creator
-        </a>
+        <DropdownItem link="/college" name="College" />
 
       ),
-      key: '4',
+      key: '1',
     },
     {
       label: (
-        <a href="_blank" onClick={handleNav("/developer")}>
-          Developer
-        </a>
+        <DropdownItem link="/developer" name="Developer" />
 
       ),
-      key: '5',
+      key: '2',
     },
   ];
+
   return (
     <section className=" container-mode">
       <div className="mode-left white-text">
@@ -79,7 +80,7 @@ export default function Mode({ handleModeChange, setMode, fill }) {
                 <a href="/#work" >Works</a>
               </li></> :
             <><li>
-              <a href="/" onClick={handleNav("/")}>Home ⚛</a>
+              <DropdownItem link="/" name="Home ⚛" />
             </li></>}
 
           <li>
@@ -97,10 +98,10 @@ export default function Mode({ handleModeChange, setMode, fill }) {
               </span>
             </a>
           </li>
-          <li style={{ cursor: "pointer" }}>
-            <Dropdown
-              menu={{ items, }} theme="dark">
 
+          <li style={{ cursor: "pointer" }} key="items">
+            <Dropdown
+              menu={{ items: projects }} theme="dark">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a onClick={(e) => e.preventDefault()}>
                 <Space>
@@ -108,8 +109,21 @@ export default function Mode({ handleModeChange, setMode, fill }) {
                 </Space>
               </a>
             </Dropdown>
-            {/* <a href="/calendar" onClick={handleNav("/calendar")}>Calendar</a> */}
           </li>
+
+          <li style={{ cursor: "pointer" }} key="portfolio">
+            <Dropdown
+              menu={{ items: portfolio }} theme="dark">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+
+              <a onClick={(e) => e.preventDefault()}>
+                <Space>
+                  Portfolio ⬇
+                </Space>
+              </a>
+            </Dropdown>
+          </li>
+
         </ul>
       </div>
       <button onClick={handleModeChange} className="container-icon">

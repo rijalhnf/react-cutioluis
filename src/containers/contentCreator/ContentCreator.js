@@ -1,6 +1,6 @@
 function ContentCreator() {
     return (
-        <div>
+        <div style={{ height: "100vh", marginBottom: "40px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Portofolio Desain & Video.</h1>
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
                 <div className="project-box">
