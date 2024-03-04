@@ -12,8 +12,8 @@ function Weather() {
 
     const API_URL = 'https://api.open-meteo.com/v1/forecast?';
     const params = {
-        latitude: '-6.351,-6.35798,-6.251,-6.1136',
-        longitude: '106.8765,106.9212,106.8665,106.8908',
+        latitude: '-6.3574652,-6.3692127,-6.251,-6.1136',
+        longitude: '106.9219802,106.8944137,106.8665,106.8908',
         current: 'temperature_2m,precipitation',
         hourly: 'precipitation_probability',
         timezone: 'Asia/Bangkok',
