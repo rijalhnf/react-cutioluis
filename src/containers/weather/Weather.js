@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Table, Tag, Radio, Flex } from 'antd';
+import { Table, Tag, Radio, Flex, Spin } from 'antd';
 
 function Weather() {
     const [data, setData] = useState(null);
@@ -41,18 +41,48 @@ function Weather() {
         };
 
         fetchData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (isLoading) {
-        console.log("Loading...")
+        return  <div style={{ height: "100vh" }}>
+            <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
+
+            <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
+
+                <div className="project-box">
+                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
+                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
+                    <p className="gray-text text-box">
+                        The weather forecast predicts sunny skies and mild temperatures for the upcoming day.
+                    </p>
+                </div>
+            </div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-60px', height: "100vh" }}>
+            <Spin size="large" />
+        </div>
+    </div>
     }
 
     if (error) {
-        return <p>Error: {error}</p>;
+        return <div style={{ height: "100vh" }}>Error: {error}</div>;
     }
 
     if (!data) {
-        return <p>No data available.</p>;
+        return  <div style={{ height: "100vh" }}>
+            <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
+
+            <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
+
+                <div className="project-box">
+                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
+                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
+                    <p className="gray-text text-box">
+                        The weather forecast predicts sunny skies and mild temperatures for the upcoming day.
+                    </p>
+                </div>
+            </div>
+        </div>;
     }
 
     const columns = [
@@ -60,6 +90,7 @@ function Weather() {
             title: 'Lokasi',
             dataIndex: 'lokasi',
             key: 'lokasi',
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             render: (text) => <a>{text}</a>,
         },
         {
@@ -173,10 +204,12 @@ function Weather() {
 
                 <div className="project-box">
                     <span className="white-text center-text">⛈️  How's the rain possibility?</span>
+                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
                     <p className="gray-text text-box">
                         The weather forecast predicts sunny skies and mild temperatures for the upcoming day.
                     </p>
                 </div>
+
 
             </div>
             <Flex justify='center'>
@@ -187,7 +220,7 @@ function Weather() {
                 </Radio.Group>
             </Flex>
 
-            <Table className="custom-box" style={{ marginTop: "10px", marginBottom: "10px" }} columns={columns} dataSource={dataTable} pagination={false} />
+            <Table className="custom-box" style={{ marginTop: "10px", marginBottom: "10px" }} columns={columns} dataSource={dataTable} pagination={false} loading={isLoading} />
             <div className='custom-box' style={{ width: 270, borderRadius: "10px", marginTop: "10px", marginBottom: "10px", padding: "10px" }}>API fetched in: {data[0].current.time}</div>
 
 
