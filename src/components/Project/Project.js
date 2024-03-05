@@ -8,23 +8,50 @@ function Project() {
   return (
     <section id="projects" className="container container-project">
       <p className="purple-text">
-        ‍💻 On Track -
-        <span className="purple-smoke-text">Learning </span>{" "}
+        ‍💻 Skill-
+        <span className="purple-smoke-text">Set</span>{" "}
       </p>
       <div className="project-header">
         <div className="project-box">
-          <span className="white-text center-text">my own-personal-webpage</span>
+          <span className="white-text center-text">Adobe Premiere Pro/After Effects/FCP X</span>
           <p className="gray-text text-box">
-            Created using React JS, deploy via github with Vercel. Oftenly migrating from Adobe Illustrator to web-based design application.
+            DSLR & Mirrorless Camera user. Motion Design 2D, Video Editing. PS: lately just prefer iphone + FCP X combo.
           </p>
         </div>
         {/* <img className="project-line" src={Line} alt="abajo" />*/}
       </div>
       <div className="project-header">
         <div className="project-box">
-          <span className="white-text center-text">my own-wedding-video</span>
+          <span className="white-text center-text">Adobe Illustrator/Figma</span>
           <p className="gray-text text-box">
-            Edited in Final Cut Pro, and a bit effects in Adobe Premiere Pro.
+            Creating graphic design, layouting, and prototyping.
+          </p>
+        </div>
+        {/* <img className="project-line" src={Line} alt="abajo" />*/}
+      </div>
+      <div className="project-header">
+        <div className="project-box">
+          <span className="white-text center-text">ReactJS</span>
+          <p className="gray-text text-box">
+            Thinking in React, React hooks, Context API.
+          </p>
+        </div>
+        {/* <img className="project-line" src={Line} alt="abajo" />*/}
+      </div>
+      <div className="project-header">
+        <div className="project-box">
+          <span className="white-text center-text">React Library</span>
+          <p className="gray-text text-box">
+            Redux, RTK, React-Router, React Query.
+          </p>
+        </div>
+        {/* <img className="project-line" src={Line} alt="abajo" />*/}
+      </div>
+      <div className="project-header">
+        <div className="project-box">
+          <span className="white-text center-text">User-Interface Library</span>
+          <p className="gray-text text-box">
+            Ant-Design (soon Chart), Tailwind CSS.
           </p>
         </div>
         {/* <img className="project-line" src={Line} alt="abajo" />*/}

@@ -18,6 +18,12 @@
   background-color: var(--gray-color);
 }
 
+.youtube-box {
+  border-radius: 10px;
+  width:inherit;
+  background-color: var(--gray-color);
+}
+
 .text-box {
   margin-top: 0.3rem;
 }

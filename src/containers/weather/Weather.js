@@ -7,8 +7,8 @@ function Weather() {
     const [error, setError] = useState(null);
     const [hari, setHari] = useState("0");
     const numHari = (hari === 0) ? Number(hari) : Number(hari) * 24;
-    console.log("numHari sejumlah:")
-    console.log(numHari)
+    // console.log("numHari sejumlah:")
+    // console.log(numHari)
 
     const API_URL = 'https://api.open-meteo.com/v1/forecast?';
     const params = {
@@ -220,6 +220,7 @@ function Weather() {
             </Flex>
 
             <Table className="custom-box" style={{ marginTop: "10px", marginBottom: "10px" }} columns={columns} dataSource={dataTable} pagination={false} loading={isLoading} />
+
             <div className='custom-box' style={{ width: 270, borderRadius: "10px", marginTop: "10px", marginBottom: "10px", padding: "10px" }}>API fetched in: {data[0].current.time}</div>
 
 

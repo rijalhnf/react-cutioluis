@@ -114,6 +114,10 @@ body {
   background-color: var(--purple-smoke-color);
 }
 
+.white-mode .youtube-box {
+  background-color: var(--purple-smoke-color);
+}
+
 .white-mode .link-decoration {
   color: var(--purple-dark-color);
 }

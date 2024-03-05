@@ -5,7 +5,7 @@
 .line {
   width: 4px;
   margin: 10px auto;
-  height: 60px;
+  height: 50px;
   border-radius: 60px;
   background: linear-gradient(180deg, rgba(36, 44, 55, 0) 0%, #575d66 100%);
 }

@@ -6,7 +6,7 @@ export const BIO = [
       cargo: "Content Creator",
     },
     description:
-      "Development of ads, covers, and social media using design methodologies such as Design Thinking",
+      "Development of Gov social media using graphic, video and motion design",
     details: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
     portfolio: "/contentcreator",
   },
@@ -16,7 +16,7 @@ export const BIO = [
       name: "Ministry of Finance",
       cargo: "Student",
     },
-    description: " Working with Figma and Adobe XD",
+    description: "Majoring in Accounting, interested in Economics",
     details: [
       "Design of web and mobile interfaces",
       "Development of user interface and user experience",
@@ -30,7 +30,7 @@ export const BIO = [
       cargo: "React Developer",
     },
     description:
-      "Freelance projects with Technologies like Nextjs, Reactjs, Redux and Gatsby",
+      "Developing Front-End services application SIAP-SLIM",
     details: ["Reactjs", "Nextjs", "Java", " SpringBoot"],
     portfolio: "/developer",
   },

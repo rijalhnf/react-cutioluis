@@ -72,7 +72,7 @@ export default function Mode({ handleModeChange, setMode, fill }) {
     <section className=" container-mode">
       <div className="mode-left white-text">
         <ul>
-          {fill === "default" ?
+          {fill === "" ?
             <> <li>
               <a href="/#about">Me</a>
             </li>
@@ -115,7 +115,6 @@ export default function Mode({ handleModeChange, setMode, fill }) {
             <Dropdown
               menu={{ items: portfolio }} theme="dark">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-
               <a onClick={(e) => e.preventDefault()}>
                 <Space>
                   Portfolio ⬇

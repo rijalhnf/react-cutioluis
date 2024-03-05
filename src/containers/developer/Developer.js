@@ -1,7 +1,22 @@
+function Kotak({ judul, isi, children }) {
+    return (
+        <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
+            <div className="project-box">
+                <span className="white-text center-text">{judul}</span>
+                <p className="gray-text text-box">
+
+                    {isi}
+                </p>
+                {children}
+            </div >
+        </div >
+    )
+}
+
 function Developer() {
     return (
-        <div style={{ height: "100vh", marginBottom: "40px" }}>
-            <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Portofolio Programming.</h1>
+        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px", minHeight: "100vh" }}>
+            <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Portfolio Programming.</h1>
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
                 <div className="project-box">
                     <span className="white-text center-text">🧑🏻‍💻 Scripting</span>
@@ -11,6 +26,8 @@ function Developer() {
                 </div>
             </div>
 
+            <Kotak judul="in Development...">
+            </Kotak>
 
         </div>
     )
