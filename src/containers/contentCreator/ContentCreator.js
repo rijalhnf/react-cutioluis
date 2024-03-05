@@ -1,4 +1,28 @@
 import { Flex } from 'antd';
+import { useState, useEffect } from 'react';
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowDimensions;
+}
 
 function Kotak({ judul, isi, children }) {
     return (
@@ -16,11 +40,32 @@ function Kotak({ judul, isi, children }) {
     )
 }
 
+
+
 function Frame({ src }) {
+    const { width } = useWindowDimensions();
+    const [widthAdapt, setWidthAdapt] = useState("");
+    const [heightAdapt, setHeightAdapt] = useState("");
+
+    // if (width < 453) setWidthAdapt("360")
+
+    useEffect(() => {
+        if (width > 453) {
+            setWidthAdapt("448");
+            setHeightAdapt("252");
+        } else {
+            setWidthAdapt("360");
+            setHeightAdapt("202");
+        }
+    }, [width]);
+
     return (
         <>
-            <iframe width="448" height="252" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen style={{ borderRadius: "10px 10px 0px 0px" }}></iframe>
+            <iframe width={widthAdapt} height={heightAdapt} src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen style={{ borderRadius: "10px 10px 0px 0px" }}></iframe>
             <br />
+            {/* <div>
+                width: {width} ~ height: {height}
+            </div> */}
         </>
     )
 }
