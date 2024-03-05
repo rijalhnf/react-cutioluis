@@ -39,7 +39,7 @@ function ContentCreator() {
                 </div>
             </div>
 
-            <Flex wrap="wrap" gap="small" justify='center'>
+            <Flex wrap="wrap" gap="middle" justify='center'>
 
                 <Kotak judul="Apa itu Just-In-Time?" isi="------">
                     <Frame src="https://www.youtube.com/embed/pBKCxhT3PUE?si=C660E1gK-q0tS86K" />
