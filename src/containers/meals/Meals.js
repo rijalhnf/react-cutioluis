@@ -72,9 +72,11 @@ const data = {
 
 function Meals() {
     return (
-        <div style={{ marginTop: "0px", paddingBottom: "40px", marginLeft: "20px", marginRight: "20px" }}>
+        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px" }}>
+
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Bekalnya Dila & Hanif.</h1>
-            <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
+
+            <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
                 <div className="project-box">
                     <span className="white-text center-text">🍱 Bring your meals?</span>
                     <p className="gray-text text-box">
@@ -83,32 +85,36 @@ function Meals() {
                 </div>
             </div>
 
-            {data.meals.map((meal) =>
-                <Card
-                    className='custom-box'
-                    styles={{ body: { padding: 0, overflow: 'hidden' } }}
-                    key={meal.name}>
-                    <Flex>
-                        <Image
-                            src={meal.image}
-                            preview={imageloading}
-                            style={{ display: 'block', width: "200px", height: "270px", borderRadius: "10px 0px 0px" }}
-                        />
-                        <Flex
-                            align="center"
-                            justify='flex-start'
-                            style={{ padding: 25 }}>
+            <Flex wrap="wrap" gap="small" justify='center'>
 
-                            <p>
-                                <span style={{ fontSize: "22px", fontWeight: "bold" }}>{meal.name}</span>
-                                <br />
-                                {meal.keterangan}
-                            </p>
+                {data.meals.map((meal) =>
+                    <Card
+                        className='custom-box'
+                        styles={{ body: { padding: 0, overflow: 'hidden' } }}
+                        key={meal.name}>
+                        <Flex>
+                            <Image
+                                src={meal.image}
+                                preview={imageloading}
+                                style={{ display: 'block', width: "200px", height: "270px", borderRadius: "10px 0px 0px" }}
+                            />
+                            <Flex
+                                align="center"
+                                justify='flex-start'
+                                style={{ padding: 25 }}>
 
+                                <p>
+                                    <span style={{ fontSize: "22px", fontWeight: "bold" }}>{meal.name}</span>
+                                    <br />
+                                    {meal.keterangan}
+                                </p>
+
+                            </Flex>
                         </Flex>
-                    </Flex>
-                </Card>)
-            }
+                    </Card>)
+                }
+
+            </Flex>
 
         </div>
     )

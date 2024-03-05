@@ -35,9 +35,6 @@ const data = {
     ]
 }
 
-
-
-
 function Calendar() {
     return (
         <div style={{ marginTop: "0px", paddingBottom: "40px", marginLeft: "20px", marginRight: "20px", justifyContent: "center" }}>
