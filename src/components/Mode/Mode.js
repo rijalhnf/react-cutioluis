@@ -72,7 +72,8 @@ export default function Mode({ handleModeChange, setMode, fill }) {
     <section className=" container-mode">
       <div className="mode-left white-text">
         <ul>
-          {fill === "" ?
+          {/* sementara di bawah ini dimatiin fungsinya, balikin dengan hapus default jadi "" aja */}
+          {fill === "default" ?
             <> <li>
               <a href="/#about">Me</a>
             </li>
