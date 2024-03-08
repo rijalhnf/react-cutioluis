@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Tag, Radio, Flex, Spin } from 'antd';
+import './Weather.css'
 
 function Weather() {
     const [data, setData] = useState(null);
@@ -44,6 +45,7 @@ function Weather() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+
     if (isLoading) {
         return <div style={{ height: "100vh" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
@@ -51,11 +53,7 @@ function Weather() {
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
 
                 <div className="project-box">
-                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
-                    <span className="white-text center-text">⛈️  How's the rain possibility?</span>
-                    <p className="gray-text text-box">
-                        The weather forecast predicts sunny skies and mild temperatures for the upcoming day.
-                    </p>
+                    <span className="white-text center-text">🌐 Loading... </span>
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-60px', height: "100vh" }}>
@@ -87,7 +85,7 @@ function Weather() {
 
     const columns = [
         {
-            title: 'Lokasi',
+            title: 'Lokasi (%)',
             dataIndex: 'lokasi',
             key: 'lokasi',
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
@@ -106,8 +104,8 @@ function Weather() {
                         }
                         return (
                             <>
-                                <Tag color={color} key={tag}>
-                                    {tag}%
+                                <Tag color={color} key={tag} className='tag'>
+                                    {tag}
                                 </Tag>
                                 <span>     </span>
                             </>
@@ -129,8 +127,8 @@ function Weather() {
                         }
                         return (
                             <>
-                                <Tag color={color} key={tag}>
-                                    {tag}%
+                                <Tag color={color} key={tag} className='tag'>
+                                    {tag}
                                 </Tag>
                                 <span>     </span>
                             </>
@@ -197,7 +195,7 @@ function Weather() {
 
 
     return (
-        <div style={{ height: "100vh", marginLeft: "20px", marginRight: "20px" }}>
+        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
@@ -206,6 +204,9 @@ function Weather() {
                     <span className="white-text center-text">⛈️  How's the rain possibility?</span>
                     <p className="gray-text text-box">
                         The weather forecast predicts sunny skies and mild temperatures for the upcoming day.
+                    </p>
+                    <p className="gray-text text-box">
+                        Note: The number is in percentage %
                     </p>
                 </div>
 

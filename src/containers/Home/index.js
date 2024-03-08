@@ -53,7 +53,15 @@ function Home({ fill }) {
   return (
     <div className={whiteMode ? "white-mode" : "dark-mode"}>
 
-      <ConfigProvider theme={{ algorithm: whiteMode ? theme.defaultAlgorithm : theme.darkAlgorithm }}>
+      <ConfigProvider theme={{
+        algorithm: whiteMode ? theme.defaultAlgorithm : theme.darkAlgorithm,
+        components: {
+          Table: {
+            cellPaddingBlock: 16,
+            cellPaddingInline: 16
+          }
+        }
+      }}>
 
         <Mode setMode={whiteMode} handleModeChange={handleModeChange} fill={fill} />
 

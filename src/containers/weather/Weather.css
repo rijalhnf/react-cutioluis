@@ -1,0 +1,7 @@
+@media (max-width: 390px) {
+    .tag {
+      font-size: 14px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+  }
