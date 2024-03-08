@@ -15,7 +15,7 @@ function Kotak({ judul, isi, children }) {
 
 function College() {
     return (
-        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px", minHeight: "100vh", justifyContent: "center" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px", minHeight: "100vh", justifyContent: "center" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Serba-Serbi Kuliah.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
@@ -40,7 +40,7 @@ function College() {
                 <a href="https://drive.google.com/file/d/1eOkNzc9ajo208CzC4ewbqI1rM2vueC1h/view?usp=sharing">🔗 Link Buku Saku UMKM</a>
             </Kotak>
 
-
+            <div className='footer' style={{ height: "20px" }}></div>
         </div>
     )
 }

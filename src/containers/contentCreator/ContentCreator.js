@@ -72,7 +72,7 @@ function Frame({ src }) {
 
 function ContentCreator() {
     return (
-        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px", minHeight: "100vh" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Portfolio Desain & Video.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
@@ -84,7 +84,7 @@ function ContentCreator() {
                 </div>
             </div>
 
-            <Flex wrap="wrap" gap="middle" justify='center'>
+            <Flex wrap="wrap" gap="middle" justify='center' style={{ paddingBottom: "20px" }}>
 
                 <Kotak judul="Apa itu Just-In-Time?" isi="------">
                     <Frame src="https://www.youtube.com/embed/pBKCxhT3PUE?si=C660E1gK-q0tS86K" />
@@ -130,7 +130,9 @@ function ContentCreator() {
 
 
             </Flex>
+            {/* <div className='footer' style={{ height: "20px" }}></div> */}
         </div>
+
     )
 }
 
