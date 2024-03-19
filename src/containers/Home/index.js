@@ -51,7 +51,7 @@ function Home({ fill }) {
 
 
   return (
-    <div className={whiteMode ? "white-mode" : "dark-mode"}>
+    <div className={whiteMode ? "white-mode" : "dark-mode"} style={{ height: "100vh" }}>
 
       <ConfigProvider theme={{
         algorithm: whiteMode ? theme.defaultAlgorithm : theme.darkAlgorithm,

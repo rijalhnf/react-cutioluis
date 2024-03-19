@@ -195,7 +195,7 @@ function Weather() {
 
 
     return (
-        <div style={{ paddingBottom: "40px", marginLeft: "20px", marginRight: "20px" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Cuaca Harian.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
@@ -220,13 +220,11 @@ function Weather() {
                 </Radio.Group>
             </Flex>
 
-            <Table className="custom-box" style={{ marginTop: "10px", marginBottom: "10px" }} columns={columns} dataSource={dataTable} pagination={false} loading={isLoading} />
+            <Table className="custom-box" style={{ marginTop: "10px" }} columns={columns} dataSource={dataTable} pagination={false} loading={isLoading} />
 
-            <div className='custom-box' style={{ width: 270, borderRadius: "10px", marginTop: "10px", marginBottom: "10px", padding: "10px" }}>API fetched in: {data[0].current.time}</div>
+            <div className='custom-box' style={{ width: 270, borderRadius: "10px", marginTop: "10px", padding: "10px" }}>API fetched in: {data[0].current.time}</div>
 
 
-            {/* <div style={{ marginTop: "30px", marginBottom: "50px", paddingBottom: "100px", marginLeft: "30px", marginRight: "30px", justifyContent: "center" }}> */}
-            {/* </div> */}
         </div >
     )
 }
