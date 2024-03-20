@@ -15,7 +15,7 @@ function Kotak({ judul, isi, children }) {
 
 function College() {
     return (
-        <div style={{ marginLeft: "20px", marginRight: "20px", minHeight: "100vh", justifyContent: "center" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px", justifyContent: "center" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Serba-Serbi Kuliah.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px" }}>
@@ -29,15 +29,15 @@ function College() {
 
 
             <Kotak judul="Jurnal Fraud Early Warning System : Identifikasi Potensi Fraud dalam Pelaporan Harta Kekayaan Penyelenggara Negara Berbasis Big Data">
-                <a href="https://j-innovative.org/index.php/Innovative/article/view/3779">🔗 Link Jurnal</a>
+                <a href="https://j-innovative.org/index.php/Innovative/article/view/3779" target="_blank" rel="noreferrer">🔗 Link Jurnal</a>
             </Kotak>
 
             <Kotak judul="Karya Tulis Tugas Akhir (KTTA): Tinjauan Alokasi Transfer Ke Daerah Otonom Baru Papua Selatan, Papua Tengah, dan Papua Pegunungan Tahun 2023">
-                <a href="https://drive.google.com/file/d/1D0lnIe0xsBOnhgjgU11sAqkyXxgwONDX/view?usp=sharing">🔗 Link KTTA</a>
+                <a href="https://drive.google.com/file/d/1D0lnIe0xsBOnhgjgU11sAqkyXxgwONDX/view?usp=sharing" target="_blank" rel="noreferrer">🔗 Link KTTA</a>
             </Kotak>
 
             <Kotak judul="Kelompok Kerja Masyarakat: Buku Saku UMKM Designed + Pencatatan Akuntansi Sederhana">
-                <a href="https://drive.google.com/file/d/1eOkNzc9ajo208CzC4ewbqI1rM2vueC1h/view?usp=sharing">🔗 Link Buku Saku UMKM</a>
+                <a href="https://drive.google.com/file/d/1eOkNzc9ajo208CzC4ewbqI1rM2vueC1h/view?usp=sharing" target="_blank" rel="noreferrer">🔗 Link Buku Saku UMKM</a>
             </Kotak>
 
             <div className='footer' style={{ height: "20px" }}></div>

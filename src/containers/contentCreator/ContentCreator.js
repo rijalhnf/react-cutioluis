@@ -72,7 +72,7 @@ function Frame({ src }) {
 
 function ContentCreator() {
     return (
-        <div style={{ marginLeft: "20px", marginRight: "20px", minHeight: "100vh" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px" }}>
             <h1 className="header-title" style={{ textAlign: "center", marginBottom: "10px" }}> Portfolio Desain & Video.</h1>
 
             <div style={{ textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: "10px", marginBottom: "10px" }}>
